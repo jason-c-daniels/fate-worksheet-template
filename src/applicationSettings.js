@@ -10,7 +10,7 @@ export const sheetName = writable("[Your Worksheet Name Here]" );
 export const fileExtension = writable("fcwks");
 
 //TODO:
-export const sheetSuffix = writable("worksheet-suffix");
+export const sheetSuffix = writable("worksheet-data");
 
 //TODO: pick a suitable prefix, by convention it should end in a dash "-"
 export const sheetPrefix = writable("fate-core-worksheet-app-prefix-");
