@@ -4,9 +4,9 @@
 
 <script>
     import Logo from "./logo.svg"
-    import {worksheetName} from '../../../applicationSettings'
+    import {sheetName} from '../../../applicationSettings'
     let worksheet_name="";
-    const unsubscribe = worksheetName.subscribe(value => {
+    const unsubscribe = sheetName.subscribe(value => {
         worksheet_name = value;
     });
 </script>

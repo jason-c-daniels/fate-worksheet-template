@@ -14,7 +14,7 @@
     import Worksheet from "../components/Worksheet";
     import getNewWorksheet, {validateWorksheet} from "../model/worksheet";
     import LocalStorageRepository from '../repository/localStorageRepository';
-    import {applicationName, fileExtension, worksheetPrefix, worksheetSuffix} from '../applicationSettings'
+    import {applicationName, fileExtension, sheetPrefix, sheetSuffix} from '../applicationSettings'
 
     import About from '../components/About/About.md';
 
@@ -36,11 +36,11 @@
     const unsubscribe_ext= fileExtension.subscribe(value => {
         file_ext = value;
     });
-    const unsubscribe_prefix= worksheetPrefix.subscribe(value => {
+    const unsubscribe_prefix= sheetPrefix.subscribe(value => {
         prefix = value;
         ls=new LocalStorageRepository(prefix);
     });
-    const unsubscribe_suffix= worksheetSuffix.subscribe(value => {
+    const unsubscribe_suffix= sheetSuffix.subscribe(value => {
         suffix = value;
     });
 
