@@ -83,7 +83,7 @@
     }
 
     function handleNewWorksheetClicked() {
-        gameWorksheet = getNewWorksheet();
+        worksheet = getNewWorksheet();
         activeIndex = 0;
         showSnackBar('Created a new worksheet.');
     }
@@ -98,7 +98,7 @@
                 let worksheet = JSON.parse(text);
                 if (validateWorksheet(worksheet)) {
                     setTimeout(() => showSnackBar("Worksheet loaded."), 250);
-                    gameWorksheet = worksheet;
+                    worksheet = worksheet;
                     activeIndex = 0;
                 }
             } catch (err) {
@@ -201,6 +201,6 @@
          to HTML if you like, but you'll need to ensure it's been rendered right before the print dialog is invoked.
          (i.e. print() )
      -->
-    <Worksheet bind:gameWorksheet={worksheet}/>
+    <Worksheet bind:worksheet={worksheet}/>
 
 </main>
