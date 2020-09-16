@@ -1,8 +1,13 @@
+:root {
+    --logo-height: 60px;
+    --logo-width: 140px;
+    --logo-bar-bottom-padding: 0.2rem;
+}
+
 .logo {
-    height: 60px;
-    width:140px;
+    height: var(--logo-height);
+    width: var(--logo-width);
     margin-right: 0.5rem;
-    margin-left: -0.5rem;
     float: left;
 }
 .logo,
@@ -10,4 +15,11 @@ h2 {display: inline-block; margin:0;}
 h2 {
     margin-top:0.9rem;
     margin-left: 1rem;
+}
+
+.logo-bar {
+    height: calc(var(--logo-height) + var(--logo-bar-bottom-padding));
+    padding-bottom: var(--logo-bar-bottom-padding);
+    border-bottom-style: solid;
+    border-bottom-width: 1pt;
 }

@@ -7,7 +7,7 @@
     export let title;
     export let hint="";
     export let indent="0";
-    export let props;
+    export let props={};
 </script>
 
 <div class="section" {...props}>

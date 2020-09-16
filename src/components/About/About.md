@@ -1,8 +1,9 @@
+<div class="page">
 # Licensing
 
 ## MIT License (Source Code)
 
-Copyright (c) 2020 Jason C. Daniels
+Copyright (c) 2020 [YOUR NAME HERE]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +25,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------------
 
-## CC-BY 3.0 - (Character Sheet Layout and Rules Content)
+## CC-BY 3.0 - [Creative Content]
 
 
 The character sheet layout and rules content are licensed separately under the
@@ -35,3 +36,15 @@ product of Evil Hat Productions, LLC, developed, authored, and edited by
 PK Sullivan, Lara Turner, Leonard Balsera, Fred Hicks, Richard Bellingham, 
 Robert Hanz, Ryan Macklin, and Sophie Lagacé, and licensed for our use under 
 the [Creative Commons Attribution 3.0 Unported license](http://creativecommons.org/licenses/by/3.0/).
+
+## Fonts
+TBD
+
+*Put individual font names and licenses here.*
+
+</div>
+
+<style>
+    @import 'About.css';
+    @import "../styles/Page.css";
+</style>
