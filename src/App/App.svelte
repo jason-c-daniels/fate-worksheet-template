@@ -95,10 +95,10 @@
             // e.target.result should contain the text
             try {
                 let text = e.target.result;
-                let worksheet = JSON.parse(text);
-                if (validateWorksheet(worksheet)) {
+                let tempWorksheet = JSON.parse(text);
+                if (validateWorksheet(tempWorksheet)) {
                     setTimeout(() => showSnackBar("Worksheet loaded."), 250);
-                    worksheet = worksheet;
+                    worksheet = tempWorksheet;
                     activeIndex = 0;
                 }
             } catch (err) {
